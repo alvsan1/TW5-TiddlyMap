@@ -2133,6 +2133,7 @@ var MapWidget = function (_Widget) {
         if (node['open-view']) {
           $tm.notify('Switching view');
           this.setView(node['open-view']);
+          this.openTiddlerWithId(nodes[0]);
         } else {
           this.openTiddlerWithId(nodes[0]);
         }
